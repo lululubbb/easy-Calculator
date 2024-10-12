@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+.calculator {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mode-selector {
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(192, 231, 253);
+    padding: 10px;
+}
+
+.mode-selector button {
+    background-color: rgb(192, 231, 253);
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.mode-selector .active {
+    background-color: #93d6f8;
+}
+
+
+#display{
+    /* margin-top: 10px; */
+    margin-left: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    width: 67%;
+    height: 58px;
+    text-align: left;
+    border: solid 1.5px,#acdbff;
+    border-radius: 20px;
+    background-color: rgb(210, 232, 250);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none; /* 去掉默认的输入框外边框 */
+}
+
+#scientific-display{
+    /* margin-top: 10px; */
+    margin-left: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    width: 73%;
+    height: 58px;
+    text-align: left;
+    border: solid 1.5px,#acdbff;
+    border-radius: 20px;
+    background-color: rgb(210, 232, 250);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none; /* 去掉默认的输入框外边框 */
+}
+
+#scientific-display:focus,
+#display:focus {
+    border-color: #60b8fc; 
+    box-shadow: 0 0 8px rgba(191, 223, 255, 0.8); /* 添加发光效果 */
+}
+
+
+
+
+#calculator-container,
+#scientific-calculator
+{
+    padding: 20px;
+    background-color: #fff;
+}
+
+.banner {
+    text-align: center; /* 使文字居中 */
+    font-size: 24px; /* 设置字体大小 */
+    color: #333; /* 字体颜色 */
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px; /* 按钮之间的水平间距 */
+    row-gap: 20px; /* 按钮之间的垂直间距 */
+    margin-top: 20px;
+}
+
+.buttons2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px; /* 按钮之间的水平间距 */
+    row-gap: 20px; /* 按钮之间的垂直间距 */
+    margin-top: 20px;
+}
+
+
+.btn {
+    width:60px;
+    height:60px;
+    background-color:rgb(192, 231, 253);
+    border: solid 1px,#8ec5ef;
+    /* color: white; */
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
+.btn:hover {
+    background-color: #8ec5ef;
+}
+
+.opebtn {
+    width:60px;
+    height:60px;
+    background-color: #ebcdf9;
+    border:solid 1px, #d99ff3;
+    /* color: white; */
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
+.opebtn:hover {
+    background-color: #d99ff3;
+}
+
+.equalbtn {
+    width:60px;
+    height:60px;
+    background-color: #fcbae3;
+    border: solid 1px,#fd93d4;
+    /* color: white; */
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
+.equalbtn:hover {
+    background-color: #fd93d4;
+}
+.clearbtn {
+    width:60px;
+    height:60px;
+    background-color: #fcbae3;
+    border: solid 1px,#fd93d4;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    border-radius: 50%;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
+.clearbtn:hover {
+    background-color: #fd93d4;
+}
+
+.hidden {
+    display: none;
+}
